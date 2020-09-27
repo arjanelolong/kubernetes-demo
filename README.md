@@ -1,6 +1,8 @@
 # kubernetes-demo
 
 - Deployment
+  - Pod
+  - Template
 - Services
   - NodePort
   - ClusterIP
