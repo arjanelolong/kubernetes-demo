@@ -4,4 +4,4 @@
 - Services
   - NodePort
   - ClusterIP
--NGINX Ingress
+- NGINX Ingress
