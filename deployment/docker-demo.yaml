@@ -1,0 +1,20 @@
+apiVersion: apps/v1 #Kubernetes version 1.7
+kind: Deployment
+metadata:
+  name: docker-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: docker-demo
+  template: #pods
+    metadata:
+      labels:
+        app: docker-demo
+    spec:
+      containers:
+        - name: docker-demo
+          image: sachirjn/docker-demo:6
+          env:
+            - name: RANDOM_IMAGE_URL
+              value: http://random-image-url:30200

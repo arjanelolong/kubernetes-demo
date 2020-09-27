@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: docker-demo
+  labels:
+    app: demo
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /docker-demo
+            backend:
+              serviceName: docker-demo
+              servicePort: 30100
