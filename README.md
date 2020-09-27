@@ -1,9 +1,7 @@
 # kubernetes-demo
 
-Deployment
-Services
-
-- NodePort
-- ClusterIP
-
-NGINX Ingress
+- Deployment
+- Services
+  - NodePort
+  - ClusterIP
+-NGINX Ingress
